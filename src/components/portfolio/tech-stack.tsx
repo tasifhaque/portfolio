@@ -52,6 +52,16 @@ const techStack = [
   { _id: "29", name: "Material UI", icon: "/icons/material-ui.jpg" },
   {
     _id: "30",
+    name: "Lucide Icon",
+    icon: "/icons/lucide.png",
+  },
+  {
+    _id: "31",
+    name: "Dribbble",
+    icon: "/icons/dribbble.png",
+  },
+  {
+    _id: "32",
     name: "VS Code",
     icon: "/icons/Visual_Studio_Code_1.35_icon.svg.png",
   },
