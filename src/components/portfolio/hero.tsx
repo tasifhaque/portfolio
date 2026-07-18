@@ -1,19 +1,7 @@
 import { useState, useEffect } from "react";
 import { Download, X } from "lucide-react";
 import { FadeIn } from "./fade-in";
-
-const profile = {
-  name: "Md Tahsin-Ul-Haque",
-  bio: "Full-Stack Developer and CS student specializing in modern web development. I design and develop end-to-end applications using React, Next.js, Node.js, MongoDB, and Firebase, with a focus on clean architecture, performance, and usability.",
-  avatar: "/D256DSC-0370-01797111568.jpg",
-  resume: "/RESUME - MD TAHSIN UL HAQUE.pdf",
-  socialLinks: {
-    linkedin: "https://www.linkedin.com/in/md-tahsin-ul-haque/",
-    github: "https://github.com/tasifhaque",
-    facebook: "https://facebook.com/haque_tasif.39",
-    email: "tasifddr@gmail.com",
-  },
-};
+import { profile, socialLinks } from "@/components/portfolio";
 
 function SocialIcon({ name, className }: { name: string; className?: string }) {
   switch (name) {
@@ -45,13 +33,6 @@ function SocialIcon({ name, className }: { name: string; className?: string }) {
       return null;
   }
 }
-
-const socialLinks = [
-  { href: profile.socialLinks.linkedin, label: "LinkedIn" },
-  { href: profile.socialLinks.github, label: "GitHub" },
-  { href: `mailto:${profile.socialLinks.email}`, label: "Email" },
-  { href: profile.socialLinks.facebook, label: "Facebook" },
-];
 
 export function Hero() {
   const [lightboxOpen, setLightboxOpen] = useState(false);

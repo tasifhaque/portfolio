@@ -1,36 +1,10 @@
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import { Stagger, StaggerItem } from "./stagger";
+import { projects } from "@/components/portfolio";
 
 function screenshotUrl(url: string): string {
   return `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=600`;
 }
-
-const projects = [
-  {
-    _id: "1",
-    title: "TaskPad",
-    description:
-      "A streamlined to-do application to help you effortlessly organize tasks and prioritize daily goals.",
-    liveUrl: "https://react-taskpad.netlify.app/",
-    codeUrl: "https://github.com/tasifhaque/react-shadcn-todo",
-  },
-  {
-    _id: "2",
-    title: "Re-Cast",
-    description:
-      "A dynamic weather app delivering real-time forecasts and accurate local climate updates at a glance",
-    liveUrl: "https://re-cast.netlify.app/",
-    codeUrl: "https://github.com/tasifhaque/react-weather",
-  },
-  {
-    _id: "3",
-    title: "Calculator",
-    description:
-      "A lightning-fast, beautifully styled web calculator built for absolute precision and ease of use.",
-    liveUrl: "https://calculator-tasif.vercel.app/",
-    codeUrl: "https://github.com/tasifhaque/Calculator",
-  },
-];
 
 export function Projects() {
   return (
